@@ -31,7 +31,7 @@ $(function(){
       slidesToShow: 4
     });
     // Time Countdown activation
-    $('#counter_time').countdown('2022/12/31', function(event) {
+    $('#counter_time').countdown('2023/01/09', function(event) {
       var $this = $(this).html(event.strftime(''
         + '<div class="counter_time_item"><span>%d</span><span>Days</span></div>'
         + '<span class="clon">:</span>'
