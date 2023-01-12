@@ -58,4 +58,7 @@ $(function(){
           scrollTop: 0
       })
   })
+
+  //Counter Up Js 
+  $('.counter').counterUp();
 })
