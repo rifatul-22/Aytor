@@ -1092,8 +1092,9 @@ body{
 /* about page about banner css end  */
 /* about shop section css start  */
 #about_shop{
-    margin: 100px 0;
+    margin-top: 100px;
     z-index: 2;
+    position: relative;
 }
 #about_shop .about_shop_img_shap{
     position: relative;
@@ -1101,8 +1102,8 @@ body{
 #about_shop .about_shop_img_shap::before{
     content: '';
     position: absolute;
-    width: 284px;
-    height: 313px;
+    width: 254px;
+    height: 283px;
     border: 14px solid #BDBDBD;
     bottom: -40px;
     left: -60px;
@@ -1111,17 +1112,67 @@ body{
 }
 @keyframes movingX {
     0% {
-     /* -webkit-transform:translateX(0); */
      transform:translateX(0)
     }
     50% {
-     /* -webkit-transform:translateX(50px); */
-     transform:translateX(50px)
+     transform:translateX(60px)
     }
     100% {
-     /* -webkit-transform:translateX(0); */
      transform:translateX(0)
     }
    }
+#about_shop .about_shop_content h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #11161E;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+#about_shop .about_shop_content p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #444444;
+    line-height: 2;
+}
+#about_shop .about_shop_content ul li{
+    margin-bottom: 26px;
+}
+#about_shop .about_shop_content ul li i{
+    background: #FF6F61;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 14px;
+}
+#about_shop .about_shop_shap{
+    width: 1208px;
+    height: 500px;
+    background: #F1F3F4;
+    position: absolute;
+    top: -18px;
+    left: 200px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    z-index: -1;
+}
 /* about shop section css end  */
+/* about counter section css start  */
+#about_counter{
+    margin: 110px 0;
+}
+#about_counter .about_counter_img{
+    width: 100px;
+    height: 100px;
+    background: #F1F3F4;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50%;
+}
+#about_counter .about_counter_content h3{
+    margin-top: 50px;
+}
+/* about counter section css end  */
 /* about page css end  */
