@@ -1185,7 +1185,7 @@ body{
 /* about counter section css end  */
 /* about Our Story section css start  */
 #our_stroy{
-    margin: 100px 0;
+    margin-top: 100px;
     display: flex;
 }
 #our_stroy .our_stroy_content{
@@ -1251,4 +1251,75 @@ body{
     transition:all 900ms linear
 }
 /* about Our Story section css end  */
+/* about shipping info section css start  */
+#about_shipping_info{
+    margin-top: 100px;
+}
+#about_shipping_info .about_shipping_item{
+    border-right: 4px solid #f1f1f1;
+}
+#about_shipping_info .about_shipping_item.b_none{
+    border: none;
+}
+#about_shipping_info .about_shipping_item_img{
+    position: relative;
+}
+#about_shipping_info .about_shipping_item_img .about_shipping_logo{
+    position: absolute;
+    left: 07px;
+    top: 22px;
+}
+#about_shipping_info .about_shipping_item_img .about_shipping_logo_1{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+#about_shipping_info .about_shipping_info_content{
+    margin-left: 10px;
+    margin-top: 13px;
+}
+#about_shipping_info .about_shipping_info_content h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: #11161E;
+}
+#about_shipping_info .about_shipping_info_content p{
+    color: #444444;
+    font-size: 13px;
+}
+#about_shipping_info .about_shipping_info_content p span{
+    color: #FF6F61;
+}
+/* about shipping info section css end  */
+/* about leadershipe section css start  */
+#leadershipe{
+    margin-top: 100px;
+}
+#leadershipe .leadershipe_title h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #11161E;
+    margin-bottom: 40px;
+}
+#leadershipe .leadershipe_card .card-body h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: #11161E;
+}
+#leadershipe .leadershipe_card .card-body p{
+    margin-top: 16px;
+    color: #FF6F61;
+    margin-bottom: 20px;
+}
+#leadershipe .leadershipe_card .card-body .card-body_icon a{
+    margin-right: 9px;
+}
+#leadershipe .leadershipe_card .card-body .card-body_icon a i{
+    color: #444444;
+    transition: 0.4s;
+}
+#leadershipe .leadershipe_card .card-body .card-body_icon a i:hover{
+    color: #FF6F61;
+}
+/* about leadershipe section css end  */
 /* about page css end  */
