@@ -1301,15 +1301,19 @@ body{
     color: #11161E;
     margin-bottom: 40px;
 }
+#leadershipe .leadershipe_card .card{
+    margin-right: 24px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 #leadershipe .leadershipe_card .card-body h5{
     font-size: 20px;
     font-weight: 600;
     color: #11161E;
 }
 #leadershipe .leadershipe_card .card-body p{
-    margin-top: 16px;
+    margin-top: 10px;
     color: #FF6F61;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #leadershipe .leadershipe_card .card-body .card-body_icon a{
     margin-right: 9px;
@@ -1322,4 +1326,36 @@ body{
     color: #FF6F61;
 }
 /* about leadershipe section css end  */
+/* about Instagrame section css start  */
+#instagrame{
+    margin-top: 100px;
+}
+#instagrame .instagrame_title h2{
+    font-size: 36px;
+    font-weight: 700;
+    color: #11161E;
+    margin-bottom: 32px;
+}
+#instagrame .instagram_item{
+    position: relative;
+}
+#instagrame .instagram_item::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #151A32;
+    top: 0;
+    left: 11px;
+    right: 81%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    transform: scale(0.5);
+}
+#instagrame .instagram_item:hover::before{
+    visibility: visible;
+    transform: scale(1);
+    opacity: 0.6;
+}
+/* about Instagrame section css end  */
 /* about page css end  */

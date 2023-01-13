@@ -31,7 +31,7 @@ $(function(){
       slidesToShow: 4
     });
     // Time Countdown activation
-    $('#counter_time').countdown('2023/01/09', function(event) {
+    $('#counter_time').countdown('2023/01/30', function(event) {
       var $this = $(this).html(event.strftime(''
         + '<div class="counter_time_item"><span>%d</span><span>Days</span></div>'
         + '<span class="clon">:</span>'
@@ -48,9 +48,9 @@ $(function(){
 
       //BackToTop
       if(navScroll > 500){
-          $('#backToTop').show(500);
+          $('#backToTop').show(400);
       }else{
-          $('#backToTop').hide(500);
+          $('#backToTop').hide(400);
       }
   })
   $('#backToTop').on('click', function(){
@@ -58,7 +58,14 @@ $(function(){
           scrollTop: 0
       })
   })
-
   //Counter Up Js 
   $('.counter').counterUp();
+  // leadershipe slick activation 
+  $('.leadershipe_card').slick({
+    arrows: false,
+    // dots: true,
+    // dotsClass: 'card_slider_dots',
+    autoplay: true,
+    slidesToShow: 4
+  });
 })
