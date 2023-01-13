@@ -63,9 +63,15 @@ $(function(){
   // leadershipe slick activation 
   $('.leadershipe_card').slick({
     arrows: false,
-    // dots: true,
-    // dotsClass: 'card_slider_dots',
     autoplay: true,
     slidesToShow: 4
+  });
+  // instagrame slider activation
+  $('.instagram_slider').slick({
+    arrows: false,
+    dots: true,
+    dotsClass: 'instagram_slider_dots',
+    autoplay: true,
+    slidesToShow: 6
   });
 })

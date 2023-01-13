@@ -1338,6 +1338,7 @@ body{
 }
 #instagrame .instagram_item{
     position: relative;
+    margin-right: 18px;
 }
 #instagrame .instagram_item::before{
     content: '';
@@ -1345,8 +1346,8 @@ body{
     inset: 0;
     background: #151A32;
     top: 0;
-    left: 11px;
-    right: 81%;
+    left: 0;
+    right: 0;
     opacity: 0;
     visibility: hidden;
     transition: 0.4s;
@@ -1357,5 +1358,165 @@ body{
     transform: scale(1);
     opacity: 0.6;
 }
+#instagrame .instagram_item .insta_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    color: #ffffff;
+    transform: translate(-50%, -50%) scale(0.8);
+    transition-delay: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+#instagrame .instagram_item .insta_btn:hover{
+    color: #FF6F61;
+}
+#instagrame .instagram_item:hover .insta_btn{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+#instagrame .instagram_slider_dots{
+    position: absolute;
+    left: 500px;
+    bottom: -45px;
+}
+#instagrame .instagram_slider_dots li{
+    display: inline-block;
+}
+#instagrame .instagram_slider_dots li button{
+    background: none;
+    border: none;
+    font-size: 0;
+    width: 10px;
+    height: 5px;
+    background: #BDBDBD;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+#instagrame .instagram_slider_dots li.slick-active button{
+    width: 26px;
+    background: #FF6F61;
+}
 /* about Instagrame section css end  */
+/* about Footer section css start  */
+#about_footer{
+    margin-top: 100px;
+    background: #F1F3F4;
+}
+#about_footer .about_footer_content h3{
+    margin-top: 100px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #11161E;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#about_footer .about_footer_content p{
+    font-size: 14px;
+    color: #444444;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+#about_footer .about_footer_input input{
+    margin-top: 120px;
+    width: 424px;
+    height: 60px;
+    border: none;
+    outline: none;
+}
+#about_footer .about_footer_input input:last-child{
+    width: 180px;
+    border: none;
+    outline: none;
+    background: #FF6F61;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: var(--headding-family);
+    font-weight: 600;
+}
+#about_footer .about_footer_info{
+    margin-top: 72px;
+}
+#about_footer .about_footer_info .about_footer_item p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #444444;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#about_footer .about_footer_info .about_footer_item .about_footer_item_icon i{
+    margin-right: 20px;
+    color: #444444;
+    transition: 0.4s;
+    margin-bottom: 80px;
+}
+#about_footer .about_footer_info .about_footer_item .about_footer_item_icon i:hover{
+    color: #FF6F61;
+}
+#about_footer .about_footer_info .about_footer_account h5{
+    font-size: 24px;
+    font-weight: 700;
+    color: #11161E;
+    margin-bottom: 36px;
+    margin-top: 20px;
+}
+#about_footer .about_footer_info .about_footer_account ul li{
+    margin-bottom: 10px;
+    color: #444444;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#about_footer .about_footer_info .about_footer_account ul li i{
+    margin-right: 7px;
+}
+#about_footer .about_footer_info .about_footer_account ul li:hover{
+    color: #FF6F61;
+}
+#about_footer .about_footer_info .about_footer_address h5{
+    margin-top: 23px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #11161E;
+    margin-bottom: 39px;
+}
+#about_footer .about_footer_info .about_footer_address .footer_location i{
+    color: #FF6F61;
+    margin-right: 14px;
+    margin-top: 5px;
+}
+#about_footer .about_footer_info .about_footer_address .footer_location p{
+    font-size: 14px;
+    color: #444444;
+}
+#about_footer .about_footer_info .about_footer_address .footer_phone i{
+    color: #FF6F61;
+    margin-right: 7px;
+}
+#about_footer .about_footer_info .about_footer_address .footer_phone a{
+    font-size: 16px;
+    color: #444444;
+}
+#about_footer .about_footer_info .about_footer_address .footer_mail i{
+    margin-top: 7px;
+    color: #FF6F61;
+    margin-right: 13px;
+}
+#about_footer .about_footer_info .about_footer_address .footer_mail a{
+    color: #444444;
+}
+#about_footer .about_footer_copyright p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#about_footer .about_footer_copyright p span{
+    color: #FF6F61;
+}
+#about_footer .about_footer_copyright img{
+    margin-top: 20px;
+}
+/* about Footer section css end  */
 /* about page css end  */
