@@ -704,6 +704,25 @@ body{
     opacity:0;
     transition:all 900ms linear
 }
+#special_offer .special_offer_img a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 50%;
+    color: #FF6F61;
+    transition: 0.4s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#special_offer .special_offer_img a:hover{
+    background: #FF6F61;
+    color: #ffffff;
+}
 /* Special offer section css end  */
 /* Latest News section css start  */
 /* #latest_news{
@@ -1520,3 +1539,45 @@ body{
 }
 /* about Footer section css end  */
 /* about page css end  */
+
+/* Shop Grid page css start  */
+/* shop grid banner css start  */
+#shop_grid_banner{
+    background: url(../img/shop_grid_banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+#shop_grid_banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+#shop_grid_banner .shop_grid_banner_content h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+#shop_grid_banner .shop_grid_banner_content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    word-spacing: 8px;
+    letter-spacing: 2px;
+}
+#shop_grid_banner .shop_grid_banner_content p span a{
+    color: #ffffff;
+    transition: 0.4s;
+    font-family: var(--body-family);
+}
+#shop_grid_banner .shop_grid_banner_content p span a:hover{
+    color: #FF6F61;
+}
+/* shop grid banner css end  */
+/* Shop Grid page css end  */
