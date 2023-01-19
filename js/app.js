@@ -74,4 +74,31 @@ $(function(){
     autoplay: true,
     slidesToShow: 6
   });
+  //leadershipe_info_slider activation
+  $('.leadershipe_info_slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    fade: true,
+    asNavFor: '.leadershipe_info_slider_nav'
+  });
+  $('.leadershipe_info_slider_nav').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.leadershipe_info_slider',
+    arrows: false,
+    dots: true,
+    dotsClass: 'leadershipe_info_slider_nav_dots',
+    centerMode: true,
+    focusOnSelect: true
+  });
 })
+
+new VenoBox({
+  selector: '.my-image-links',
+  numeration: true,
+  infinigall: true,
+  share: true,
+  spinner: 'rotating-plane'
+});

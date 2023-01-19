@@ -531,10 +531,10 @@ body{
     margin-top: 50px;
     position: relative;
 }
-/* #cream_banner .cream_banner_slider .cream_banner_slider_item .cream_banner_slider_content{
+#cream_banner .cream_banner_slider .cream_banner_slider_item .cream_banner_slider_content{
     position: relative;
 }
-#cream_banner .cream_banner_slider .cream_banner_slider_item .cream_banner_slider_content::after{
+/* #cream_banner .cream_banner_slider .cream_banner_slider_item::after{
     content: '';
 	position: absolute;
 	pointer-events: none;
@@ -546,7 +546,7 @@ body{
     right: 0;
     background: rgba(255,255,255,0.3);
 }
-#cream_banner .cream_banner_slider .cream_banner_slider_item .cream_banner_slider_content:hover::after{
+#cream_banner .cream_banner_slider .cream_banner_slider_item:hover::after{
     left:0;
     right:0;
     opacity:0;
@@ -723,6 +723,36 @@ body{
     background: #FF6F61;
     color: #ffffff;
 }
+#special_offer .special_offer_img a.play_btn::after,
+#special_offer .special_offer_img a.play_btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    animation: ripple 3s ease-in-out infinite;
+}
+@keyframes ripple {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+      }
+      30% {
+        opacity: 0.40;
+      }
+      100% {
+        -webkit-transform: scale(1.6);
+        transform: scale(1.6);
+        opacity: 0;
+      }
+}
 /* Special offer section css end  */
 /* Latest News section css start  */
 /* #latest_news{
@@ -736,6 +766,47 @@ body{
 }
 #latest_news .card{
     margin-right: 20px;
+}
+#latest_news .card .card_img{
+    position: relative;
+}
+#latest_news .card .card_img::after{
+    content:'';
+    position:absolute;
+    pointer-events:none;
+    opacity:1;
+    z-index:3;
+    top:50%;
+    right:0;
+    bottom:50%;
+    left:0;
+    background:rgba(255,255,255,0.3)
+}
+#latest_news .card .card_img:hover::after{
+    top:0;
+    bottom:0;
+    opacity:0;
+    -webkit-transition:all 900ms linear;
+    transition:all 900ms linear;
+}
+#latest_news .card .card_img::before{
+    content:'';
+    position:absolute;
+    pointer-events:none;
+    opacity:1;
+    z-index:3;
+    top:0;
+    right:51%;
+    bottom:0;
+    left:50%;
+    background:rgba(255,255,255,0.2)
+}
+#latest_news .card .card_img:hover::before{
+    left:0;
+    right:0;
+    opacity:0;
+    -webkit-transition:all 900ms linear;
+    transition:all 900ms linear
 }
 #latest_news .card img{
     padding: 20px 15px;
@@ -1269,6 +1340,40 @@ body{
     opacity:0;
     transition:all 900ms linear
 }
+#our_stroy .our_story_img a.play_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    color: #FF6F61;
+    text-align: center;
+    line-height: 88px;
+    border-radius: 50%;
+    font-size: 23px;
+    transition: 0.4s;
+}
+#our_stroy .our_story_img a.play_btn:hover{
+    background: #FF6F61;
+    color: #ffffff;
+}
+#our_stroy .our_story_img a.play_btn::after,
+#our_stroy .our_story_img a.play_btn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: -1;
+    border-radius: 50%;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    animation: ripple 2s ease-in-out infinite;
+}
 /* about Our Story section css end  */
 /* about shipping info section css start  */
 #about_shipping_info{
@@ -1345,6 +1450,59 @@ body{
     color: #FF6F61;
 }
 /* about leadershipe section css end  */
+/* about leadershipe info section css start  */
+#leadershipe_info{
+    margin-top: 96px;
+    position: relative;
+}
+#leadershipe_info .leadershipe_info_title img:last-child{
+    margin-bottom: 24px;
+}
+#leadershipe_info .leadershipe_info_slider_img img{
+    border-radius: 50%;
+    margin-bottom: 23px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+#leadershipe_info .leadershipe_info_slider_nav .leadershipe_info_slider_nav_info p{
+    width: 570px;
+    text-align: center;
+    margin: auto;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #444444;
+}
+#leadershipe_info .leadershipe_info_slider_nav .leadershipe_info_slider_nav_info h4{
+    font-size: 34px;
+    font-weight: 700;
+    color: #11161E;
+    text-align: center;
+    text-transform: capitalize;
+}
+#leadershipe_info .leadershipe_info_slider_nav .leadershipe_info_slider_nav_info p:last-child{
+    color: #FF6F61;
+}
+#leadershipe_info ul.leadershipe_info_slider_nav_dots{
+    display: flex;
+    text-align: center;
+    margin-left: 43%;
+}
+#leadershipe_info ul.leadershipe_info_slider_nav_dots li button{
+    border: none;
+    font-size: 0;
+    background: none;
+    width: 10px;
+    height: 6px;
+    background: #BDBDBD;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+#leadershipe_info ul.leadershipe_info_slider_nav_dots li.slick-active button{
+    width: 26px;
+    background: #FF6F61;
+}
+/* about leadershipe info section css end  */
 /* about Instagrame section css start  */
 #instagrame{
     margin-top: 100px;
