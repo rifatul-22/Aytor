@@ -93,6 +93,8 @@ $(function(){
     centerMode: true,
     focusOnSelect: true
   });
+  // zoom pluging activation 
+  $(".xzoom").xzoom();
 })
 
 new VenoBox({
