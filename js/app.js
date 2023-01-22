@@ -95,6 +95,25 @@ $(function(){
   });
   // zoom pluging activation 
   $(".xzoom").xzoom();
+
+  // products details activation
+  $('.product_details_slider_img').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.product_details_slider_nav'
+  });
+  $('.product_details_slider_nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.product_details_slider_img',
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
 })
 
 new VenoBox({
