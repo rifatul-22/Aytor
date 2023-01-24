@@ -114,6 +114,20 @@ $(function(){
     centerMode: true,
     focusOnSelect: true
   });
+  // filterizr activation
+  $('.product_customer_review_text').filterizr();
+
+  $('.product_customer_review_menu li').on('click', function(){
+    $(this).addClass('active_menu');
+    $(this).siblings().removeClass('active_menu');  
+  })
+  // Product Releted Slider Activation
+  $('.product_releted_slider').slick({
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    slidesToShow: 4
+  });
 })
 
 new VenoBox({
