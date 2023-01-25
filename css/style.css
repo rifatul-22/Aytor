@@ -1604,6 +1604,7 @@ body{
     height: 60px;
     border: none;
     outline: none;
+    padding-left: 20px;
 }
 #about_footer .about_footer_input input:last-child{
     width: 180px;
@@ -2213,3 +2214,132 @@ body{
 }
    /* shop Details Products Releted section css end */
 /* Shop Details page css end  */
+
+/* Compare page css start  */
+/* compare Banner css section start  */
+#compare_banner{
+    background: url(../img/compare_bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+#compare_banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+#compare_banner .compare_banner_content h3{
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#compare_banner .compare_banner_content p{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+#compare_banner .compare_banner_content p span a{
+    color: #ffffff;
+    transition: 0.3s;
+}
+#compare_banner .compare_banner_content p span a:hover{
+    color: #FF6F61;
+}
+/* compare Banner css section end  */
+/* compare Product Info css section start  */
+#compare_product_info{
+    margin-top: 100px;
+}
+#compare_product_info .product_search{
+    position: relative;
+}
+#compare_product_info .product_search .form_control{
+    height: 50px;
+    padding: 0 28px;
+    border: 1px solid #E0E0E0;
+    outline: none;
+}
+#compare_product_info .product_search button{
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    line-height: 1px;
+    background: transparent;
+    border: none;
+    border-left: 1px solid #FF6F61;
+    padding-left: 18px;
+    transition: 0.3s;
+}
+#compare_product_info .product_search button:hover{
+    color: #FF6F61;
+}
+#compare_product_info .compare_product_info_table .compare_product_info_table_item{
+    text-align: center;
+    border-top: none;
+}
+#compare_product_info .compare_product_info_table table{
+    border: 1px solid #E0E0E0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+#compare_product_info .compare_product_info_table table .tr_remove{
+    border-bottom: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_remove th{
+    padding: 40px 20px;
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_remove th h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #11161E;
+    text-transform: capitalize;
+}
+#compare_product_info .compare_product_info_table table .tr_remove td{
+    padding: 38px 52px;
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_remove td a{
+    color: #FF6F61;
+    transition: 0.3s;
+}
+#compare_product_info .compare_product_info_table table .tr_remove td a:hover{
+    color: #11161E;
+}
+#compare_product_info .compare_product_info_table table .tr_img th{
+    padding: 0 20px;
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_img th h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #11161E;
+    text-transform: capitalize;
+}
+#compare_product_info .compare_product_info_table table .tr_img td{
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_img td .product_img img{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#compare_product_info .compare_product_info_table table .tr_img td a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #11161E;
+    text-transform: capitalize;
+    /* margin-bottom: 35px; */
+    transition: 0.3s;
+}
+#compare_product_info .compare_product_info_table table .tr_img td a:hover{
+    color: #FF6F61;
+}
+/* compare Product Info css section end  */
+/* Compare page css end  */
