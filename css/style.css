@@ -2264,6 +2264,7 @@ body{
     padding: 0 28px;
     border: 1px solid #E0E0E0;
     outline: none;
+    background: #E0E0E0;
 }
 #compare_product_info .product_search button{
     position: absolute;
@@ -2271,13 +2272,14 @@ body{
     right: 18px;
     line-height: 1px;
     background: transparent;
+    color: #FF6F61;
     border: none;
     border-left: 1px solid #FF6F61;
     padding-left: 18px;
     transition: 0.3s;
 }
 #compare_product_info .product_search button:hover{
-    color: #FF6F61;
+    color: #11161E;
 }
 #compare_product_info .compare_product_info_table .compare_product_info_table_item{
     text-align: center;
@@ -2313,6 +2315,9 @@ body{
 #compare_product_info .compare_product_info_table table .tr_remove td a:hover{
     color: #11161E;
 }
+#compare_product_info .compare_product_info_table table .tr_img{
+    border-bottom: 1px solid #E0E0E0;
+}
 #compare_product_info .compare_product_info_table table .tr_img th{
     padding: 0 20px;
     border-right: 1px solid #E0E0E0;
@@ -2341,5 +2346,172 @@ body{
 #compare_product_info .compare_product_info_table table .tr_img td a:hover{
     color: #FF6F61;
 }
+#compare_product_info .compare_product_info_table table .tr_description{
+    border-bottom: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_description th{
+    padding: 45px 20px;
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_description th h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #11161E;
+    text-transform: capitalize;
+}
+#compare_product_info .compare_product_info_table table .tr_description td{
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_description td p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    padding: 0px 10px;
+    line-height: 28px;
+}
+#compare_product_info .compare_product_info_table table .tr_price{
+    border-bottom: 1px solid #E0E0E0;
+    background: #F1F3F4;
+}
+#compare_product_info .compare_product_info_table table .tr_price th{
+    padding: 18px 45px;
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_price th h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #11161E;
+    text-transform: capitalize;
+}
+#compare_product_info .compare_product_info_table table .tr_price td{
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_color{
+    border-bottom: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_color th{
+    padding: 18px 45px;
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_color th h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #11161E;
+    text-transform: capitalize;
+}
+#compare_product_info .compare_product_info_table table .tr_color td{
+    border-right: 1px solid #E0E0E0;
+}
+
+#compare_product_info .compare_product_info_table table .tr_ratings td{
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_ratings{
+    border-bottom: 1px solid #E0E0E0;
+    background: #F1F3F4;
+}
+#compare_product_info .compare_product_info_table table .tr_ratings th{
+    padding: 18px 45px;
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_ratings th h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #11161E;
+    text-transform: capitalize;
+}
+#compare_product_info .compare_product_info_table table .tr_ratings td{
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_ratings td .star{
+    color: #FF6F61;
+    margin-right: 7px;
+}
+
+#compare_product_info .compare_product_info_table table .tr_stock{
+    border-bottom: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_stock th{
+    padding: 18px 45px;
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_stock th h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #11161E;
+    text-transform: capitalize;
+}
+#compare_product_info .compare_product_info_table table .tr_stock td{
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_stock td i{
+    margin-right: 7px;
+    color: #29CC00;
+}
+#compare_product_info .compare_product_info_table table .tr_cart{
+    border-bottom: 1px solid #E0E0E0;
+    background: #F1F3F4;
+}
+#compare_product_info .compare_product_info_table table .tr_cart th{
+    padding: 18px 45px;
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_cart th h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #11161E;
+    text-transform: capitalize;
+}
+#compare_product_info .compare_product_info_table table .tr_cart td{
+    border-right: 1px solid #E0E0E0;
+}
+#compare_product_info .compare_product_info_table table .tr_cart td a{
+    padding: 17px 26px;
+    background: #FF6F61;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
 /* compare Product Info css section end  */
 /* Compare page css end  */
+/* Shop Cart page css start  */
+/* shop cart banner section css start  */
+#shop_cart_banner{
+    background: url(../img/shop_cart_bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+#shop_cart_banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+#shop_cart_banner .shop_cart_banner_content h3{
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#shop_cart_banner .shop_cart_banner_content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: capitalize;
+    word-spacing: 8px;
+}
+#shop_cart_banner .shop_cart_banner_content p span a{
+    color: #ffffff;
+    transition: 0.3s;
+}
+#shop_cart_banner .shop_cart_banner_content p span a:hover{
+    color: #FF6F61;
+}
+/* shop cart banner section css end  */
+/* Shop Cart page css end  */
