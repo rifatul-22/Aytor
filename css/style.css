@@ -149,22 +149,26 @@ body{
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
+    transform: scale(0.5);
     transition: 0.4s ease-in-out;
 }
 #beauty_cream .beauty_cream_img:hover .beauty_cream_img_overlay{
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: scale(1);
 }
 #beauty_cream .beauty_cream_img .beauty_cream_img_overlay h4{
     color: #ffffff;
     font-weight: 700;
     margin-bottom: 23px;
     transition: 0.4s;
+    transform: translateY(30px);
 }
 #beauty_cream .beauty_cream_img .beauty_cream_img_overlay h4:hover{
     color: #FF6F61;
+}
+#beauty_cream .beauty_cream_img .beauty_cream_img_overlay:hover h4{
+    transform: translateY(0);
 }
 #beauty_cream .beauty_cream_img .beauty_cream_img_overlay a{
     color: #ffffff;
@@ -2545,14 +2549,21 @@ body{
     border-right: 1px solid #E0E0E0;
 }
 #shop_cart_details .shop_cart_details_table table .cart_item td .cart_product_img img{
-    padding: 30px 52px;
+    padding: 30px 35px;
 }
+/* #shop_cart_details .shop_cart_details_table table .cart_item td .cart_para{
+    display: block;
+    width: 300px;
+} */
 #shop_cart_details .shop_cart_details_table table .cart_item td .cart_para p{
     padding: 0 30px;
     font-size: 16px;
     font-weight: 400;
     color: #444444;
     text-transform: capitalize;
+}
+#shop_cart_details .shop_cart_details_table table .cart_item td .quantity{
+    width: 200px;
 }
 #shop_cart_details .shop_cart_details_table table .cart_item td .quantity button{
     background: transparent;
@@ -2580,7 +2591,11 @@ body{
 #shop_cart_details .shop_cart_details_table table .cart_item td .trush{
     color: #FF6F61;
 }
-#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code input{
+#shop_cart_details .shop_cart_details_table_2{
+    border: 1px solid #E0E0E0;
+    border-top: none;
+}
+#shop_cart_details .shop_cart_details_table_2 .shop_cart_details_table_2_input input{
     margin: 15px;
     width: 320px;
     height: 50px;
@@ -2588,27 +2603,21 @@ body{
     outline: none;
     border: 1px solid #BDBDBD;
 }
-#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code button{
+#shop_cart_details .shop_cart_details_table_2 .shop_cart_details_table_2_input button{
     width: 112px;
     height: 50px;
-    /* outline: none; */
+    outline: none;
     border: none;
     background: #FF6F61;
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
-    position: relative;
-    top: 15px;
 }
-#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code button i{
+#shop_cart_details .shop_cart_details_table_2 .shop_cart_details_table_2_input button i{
     margin-left: 5px;
 }
-#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code_btn{
-    display: flex;
-    justify-content: end;
-}
-#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code_btn button{
+#shop_cart_details .shop_cart_details_table_2 .shop_cart_details_table_2_button button{
     width: 180px;
     height: 50px;
     border: none;
@@ -2620,7 +2629,10 @@ body{
     position: relative;
     top: 15px;
 }
-#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code_btn a{
+#shop_cart_details .shop_cart_details_table_2 .shop_cart_details_table_2_button button i{
+    margin-left: 5px;
+}
+#shop_cart_details .shop_cart_details_table_2 .shop_cart_details_table_2_button a{
     width: 202px;
     height: 50px;
     border: none;
@@ -2632,7 +2644,102 @@ body{
     position: relative;
     top: 15px;
     margin-left: 20px;
-    padding-top: 15px;
+    padding: 17px 20px;
+    margin-right: 15px;
+}
+#shop_cart_details .shop_cart_details_table_2 .shop_cart_details_table_2_button a i{
+    margin-left: 5px;
+}
+#shop_cart_details .shop_cart_total_cart{
+    margin-top: 40px;
+}
+#shop_cart_details .shop_cart_total_cart h4{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #11161E;
+    margin-bottom: 30px;
+}
+#shop_cart_details .shop_cart_total_cart .shop_cart_total_cart_item{
+    border: 1px solid red;
+}
+#shop_cart_details .shop_cart_total_cart_table table{
+    border: 1px solid #E0E0E0;
+    width: 100%;
+}
+#shop_cart_details .shop_cart_total_cart_table table tr{
+    border-bottom: 1px solid #E0E0E0;
+}
+#shop_cart_details .shop_cart_total_cart_table table th{
+    padding: 20px 0;
+    width: 224px;
+    padding-left: 18px;
+    background: #F1F3F4;
+}
+#shop_cart_details .shop_cart_total_cart_table table th p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    letter-spacing: 1px;
+}
+#shop_cart_details .shop_cart_total_cart_table table td{
+    padding-left: 18px;
+    color: #444444;
+    transition: 0.3s;
+}
+#shop_cart_details .shop_cart_total_cart_table table td:hover{
+    color: #FF6F61;
+}
+#shop_cart_details .shop_cart_total_cart a{
+    display: inline-block;
+    margin-top: 30px;
+    width: 230px;
+    padding: 20px 27px;
+    background: #FF6F61;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+#shop_cart_details .shop_cart_total_cart a i{
+    padding-left: 6px;
 }
 /* shop cart banner section css end  */
 /* Shop Cart page css end  */
+/* CheckOut page css start  */
+/* CheckOut Banner section css start  */
+#checkout_banner{
+    background: url(../img/checkout_bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+#checkout_banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+#checkout_banner .checkout_banner_content h3{
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+#checkout_banner .checkout_banner_content p{
+    color: #ffffff;
+}
+#checkout_banner .checkout_banner_content p span a{
+    color: #ffffff;
+    word-spacing: 2px;
+    transition: 0.3s;
+}
+#checkout_banner .checkout_banner_content p span a:hover{
+    color: #FF6F61;
+}
+/* CheckOut Banner section css end  */
+/* CheckOut page css end  */
