@@ -2513,5 +2513,126 @@ body{
 #shop_cart_banner .shop_cart_banner_content p span a:hover{
     color: #FF6F61;
 }
+#shop_cart_details{
+    margin-top: 100px;
+}
+#shop_cart_details .shop_cart_details_table .shop_cart_details_table_item{
+    text-align: center;
+}
+#shop_cart_details .shop_cart_details_table table{
+    border: 1px solid #E0E0E0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+#shop_cart_details .shop_cart_details_table table .tr_heading{
+    background: #F1F3F4;
+    border-bottom: 2px solid #FF6F61;
+}
+#shop_cart_details .shop_cart_details_table table .tr_heading th{
+    padding: 22px 47px;
+}
+#shop_cart_details .shop_cart_details_table table .tr_heading th h6{
+    font-size: 18px;
+    font-weight: 600;
+    color: #11161E;
+    text-transform: capitalize;
+}
+#shop_cart_details .shop_cart_details_table table .cart_item{
+    border-bottom: 1px solid #E0E0E0;
+}
+#shop_cart_details .shop_cart_details_table table .cart_item td{
+    border-right: 1px solid #E0E0E0;
+}
+#shop_cart_details .shop_cart_details_table table .cart_item td .cart_product_img img{
+    padding: 30px 52px;
+}
+#shop_cart_details .shop_cart_details_table table .cart_item td .cart_para p{
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    text-transform: capitalize;
+}
+#shop_cart_details .shop_cart_details_table table .cart_item td .quantity button{
+    background: transparent;
+    border: 1px solid #BDBDBD;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #BDBDBD;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#shop_cart_details .shop_cart_details_table table .cart_item td .quantity button:hover{
+    color: #FF6F61;
+    border: 1px solid #FF6F61;
+}
+#shop_cart_details .shop_cart_details_table table .cart_item td .quantity input{
+    width: 70px;
+    height: 30px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #BDBDBD;
+}
+#shop_cart_details .shop_cart_details_table table .cart_item td .trush{
+    color: #FF6F61;
+}
+#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code input{
+    margin: 15px;
+    width: 320px;
+    height: 50px;
+    padding-left: 14px;
+    outline: none;
+    border: 1px solid #BDBDBD;
+}
+#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code button{
+    width: 112px;
+    height: 50px;
+    /* outline: none; */
+    border: none;
+    background: #FF6F61;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    top: 15px;
+}
+#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code button i{
+    margin-left: 5px;
+}
+#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code_btn{
+    display: flex;
+    justify-content: end;
+}
+#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code_btn button{
+    width: 180px;
+    height: 50px;
+    border: none;
+    background: #FF6F61;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    top: 15px;
+}
+#shop_cart_details .shop_cart_details_table table .cart_btn .coupon_code_btn a{
+    width: 202px;
+    height: 50px;
+    border: none;
+    background: #FF6F61;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    top: 15px;
+    margin-left: 20px;
+    padding-top: 15px;
+}
 /* shop cart banner section css end  */
 /* Shop Cart page css end  */
