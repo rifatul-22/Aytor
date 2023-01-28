@@ -3,6 +3,7 @@
 :root{
     --body-family: 'Roboto', sans-serif;
     --headding-family: 'Josefin Sans', sans-serif;
+    --icon-font: 'Font Awesome 5 Pro';
 }
 h1,h2,h3,h4,h5,h6,p,ol,ul,small,span{
     margin: 0;
@@ -2742,4 +2743,91 @@ body{
     color: #FF6F61;
 }
 /* CheckOut Banner section css end  */
+/* CheckOut Billing Information section css start  */
+#checkout_info{
+    margin-top: 99px;
+}
+#checkout_info .checkout_coupon{
+    background: #F1F3F4;
+    padding: 17px 0;
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+#checkout_info .checkout_coupon p{
+    padding-left: 17px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+}
+#checkout_info .checkout_coupon a{
+    color: #FF6F61;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-left: 5px;
+    text-decoration: underline;
+    position: relative;
+    top: 2px;
+}
+#checkout_info .checkout_info_billing_input h4{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #11161E;
+    margin-bottom: 28px;
+}
+#checkout_info .checkout_info_billing_input .input_name{
+    margin-bottom: 24px;
+}
+#checkout_info .checkout_info_billing_input h5{
+    font-size: 16px;
+    font-weight: 400;
+    color: #11161E;
+    text-transform: capitalize;
+    margin-bottom: 13px;
+}
+#checkout_info .checkout_info_billing_input .input_name input{
+    width: 259px;
+    height: 50px;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid #E0E0E0;
+}
+#checkout_info .checkout_info_billing_input .input_company input{
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 24px;
+}
+#checkout_info .checkout_info_billing_input .input_company select{
+    margin-bottom: 24px;
+    height: 50px;
+    padding-left: 15px;
+    color: #444444;
+}
+#checkout_info .checkout_info_additional_input h4{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #11161E;
+    margin-bottom: 28px;
+}
+#checkout_info .checkout_info_additional_input h5{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+}
+#checkout_info .checkout_info_additional_input textarea{
+    width: 100%;
+    height: 140px;
+    resize: none;
+    padding-top: 20px;
+    padding-left: 14px;
+    outline: none;
+}
+/* CheckOut Billing Information section css end  */
 /* CheckOut page css end  */
