@@ -2552,10 +2552,6 @@ body{
 #shop_cart_details .shop_cart_details_table table .cart_item td .cart_product_img img{
     padding: 30px 35px;
 }
-/* #shop_cart_details .shop_cart_details_table table .cart_item td .cart_para{
-    display: block;
-    width: 300px;
-} */
 #shop_cart_details .shop_cart_details_table table .cart_item td .cart_para p{
     padding: 0 30px;
     font-size: 16px;
@@ -2829,5 +2825,257 @@ body{
     padding-left: 14px;
     outline: none;
 }
+#checkout_info .checkout_info_your_order h5{
+    font-size: 30px;
+    font-weight: 700;
+    color: #11161E;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#checkout_info .checkout_info_your_order .checkout_info_your_order_table{
+    text-align: center;
+}
+#checkout_info .checkout_info_your_order table{
+    border: 1px solid #E0E0E0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+#checkout_info .checkout_info_your_order table .tr_heading{
+    background: #F1F3F4;
+    border-bottom: 2px solid #FF6F61;
+}
+#checkout_info .checkout_info_your_order table .tr_heading th{
+    padding: 22px 47px;
+    color: #11161E;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#checkout_info .checkout_info_your_order table .tr_order_item{
+    border-bottom: 1px solid #E0E0E0;
+}
+#checkout_info .checkout_info_your_order table .tr_order_item td{
+    border-right: 1px solid #E0E0E0;
+    color: #444444;
+}
+#checkout_info .checkout_info_your_order table .tr_order_item td a img{
+    padding: 30px 50px;
+}
+#checkout_info .checkout_info_your_order table .tr_order_item td .order_para p{
+    color: #444444;
+    padding: 0 50px;
+}
+#checkout_info .checkout_info_your_order table .tr_order_item td a{
+    color: #444444;
+    font-family: var(--body-family);
+}
+#checkout_info .checkout_info_your_order table .tr_order_item td .quantity{
+    width: 200px;
+}
+#checkout_info .checkout_info_your_order table .tr_order_item td .quantity button{
+    background: transparent;
+    border: 1px solid #BDBDBD;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #BDBDBD;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#checkout_info .checkout_info_your_order table .tr_order_item td .quantity button:hover{
+    color: #FF6F61;
+    border: 1px solid #FF6F61;
+}
+#checkout_info .checkout_info_your_order table .tr_order_item td .quantity input{
+    width: 70px;
+    height: 30px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 15px;
+    border-radius: 5px;
+    border: 1px solid #BDBDBD;
+}
+#checkout_info .checkout_info_your_order .pricing{
+    border: 1px solid #E0E0E0;
+    border-top: none;
+}
+#checkout_info .checkout_info_your_order .pricing h6{
+    padding: 15px 0;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #11161E;
+    border-right: 1px solid #E0E0E0;
+    width: 268px;
+}
+#checkout_info .checkout_info_your_order .pricing .price span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+    position: relative;
+    top: 13px;
+    left: 760px;
+    transition: 0.3s;
+}
+#checkout_info .checkout_info_your_order .pricing .price span:hover{
+    color: #FF6F61;
+}
+#checkout_info .checkout_info_checkbox .checkout_info_checkbox_item{
+    margin-top: 20px;
+}
+#checkout_info .checkout_info_checkbox .checkout_info_checkbox_item input{
+    color: #FF6F61;
+    width: 16px;
+    height: 22px;
+    cursor: pointer;
+}
+#checkout_info .checkout_info_checkbox .checkout_info_checkbox_item h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: #11161E;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+#checkout_info .checkout_info_checkbox .checkout_info_checkbox_item .checkbox_para{
+    width: 100%;
+    background: #F1F3F4;
+    margin-top: 20px;
+}
+#checkout_info .checkout_info_checkbox .checkout_info_checkbox_item .checkbox_para p{
+    padding: 18px 0;
+    padding-left: 20px;
+    padding-right: 60px;
+    font-size: 14px;
+    color: #444444;
+}
+#checkout_info .checkout_info_checkbox p{
+    font-size: 14px;
+    color: #444444;
+    margin: 20px 0;
+}
+#checkout_info .checkout_info_checkbox p span{
+    color: #FF6F61;
+}
+#checkout_info .checkout_info_checkbox button{
+    width: 180px;
+    height: 50px;
+    border: none;
+    background: #FF6F61;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
 /* CheckOut Billing Information section css end  */
 /* CheckOut page css end  */
+
+/* Wishlist page css start  */
+/* Wishlist banner section css start  */
+#wishlist_banner{
+    background: url(../img/wishlist_bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+#wishlist_banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+#wishlist_banner .wishlist_banner_content h2{
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+#wishlist_banner .wishlist_banner_content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    word-spacing: 2px;
+}
+#wishlist_banner .wishlist_banner_content p span a{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+#wishlist_banner .wishlist_banner_content p span a:hover{
+    color: #FF6F61;
+}
+/* Wishlist banner section css end  */
+/* Wishlist product section css start  */
+#wishlist_product{
+    margin-top: 100px;
+}
+#wishlist_product .wishlist_product_content .wishlist_product_table{
+    text-align: center;
+}
+#wishlist_product .wishlist_product_content table{
+    border: 1px solid #E0E0E0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+#wishlist_product .wishlist_product_content table tr{
+    border-bottom: 1px solid #E0E0E0;
+}
+#wishlist_product .wishlist_product_content table .tr_heading{
+    background: #F1F3F4;
+    border-bottom: 2px solid #FF6F61;
+    width: 100%;
+}
+#wishlist_product .wishlist_product_content table .tr_heading th{
+    padding: 22px 47px;
+}
+#wishlist_product .wishlist_product_content table .tr_heading th h6{
+    color: #11161E;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#wishlist_product .wishlist_product_content table .tr_wishlist_item .wishlist_name{
+    padding: 20px 0;
+}
+#wishlist_product .wishlist_product_content table .tr_wishlist_item .wishlist_name a{
+    margin-left: 50px;
+}
+#wishlist_product .wishlist_product_content table .tr_wishlist_item .wishlist_name a img{
+    margin-left: -50px;
+}
+#wishlist_product .wishlist_product_content table .tr_wishlist_item .wishlist_name .font_x{
+    width: 20px;
+    height: 20px;
+    color: #444444;
+    position: relative;
+    top: 59px;
+}
+#wishlist_product .wishlist_product_content table .tr_wishlist_item .wishlist_name .wishlist_para{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--body-family);
+    color: #444444;
+    position: relative;
+    top: 59px;
+    margin-left: 0;
+}
+#wishlist_product .wishlist_product_content table .tr_wishlist_item td i{
+    color: #29CC00;
+    margin-right: 7px;
+}
+#wishlist_product .wishlist_product_content table .tr_wishlist_item td .wishlist_btn{
+    border: none;
+    background: #FF6F61;
+    color: #ffffff;
+    padding: 16px 26px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 30px;
+}
+/* Wishlist product section css end  */
+/* Wishlist page css end  */

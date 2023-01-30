@@ -114,6 +114,7 @@ $(function(){
     centerMode: true,
     focusOnSelect: true
   });
+
   // filterizr activation
   $('.product_customer_review_text').filterizr();
 
@@ -127,6 +128,10 @@ $(function(){
     dots: false,
     autoplay: true,
     slidesToShow: 4
+  });
+  // checkbox jquary activation
+  $('.checkbox_jq').on('click', function(){
+    $('.checkbox_para').slideToggle();
   });
 })
 
