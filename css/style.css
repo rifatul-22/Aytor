@@ -3079,3 +3079,129 @@ body{
 }
 /* Wishlist product section css end  */
 /* Wishlist page css end  */
+/* Blog page css start  */
+/* Blog banner section css start  */
+#blog_banner{
+    background: url(../img/blog_bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+#blog_banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+#blog_banner .blog_banner_content h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+#blog_banner .blog_banner_content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    word-spacing: 2px;
+}
+#blog_banner .blog_banner_content p span a{
+    color: #ffffff;
+    transition: 0.3s;
+}
+#blog_banner .blog_banner_content p span a:hover{
+    color: #FF6F61;
+}
+/* Blog banner section css end  */
+/* Blog Box section css start  */
+#blog_box{
+    margin-top: 100px;
+}
+#blog_box .blog_box_item{
+    margin-bottom: 24px;
+}
+#blog_box .blog_box_item .card{
+    position: relative;
+}
+#blog_box .blog_box_item .card .card_img a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(68,68,68,0.4);
+    padding: 12px 13px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    transition: 0.3s;
+}
+#blog_box .blog_box_item .card .card_img a:hover{
+    background: rgba(68,68,68,0.8);
+    color: #ffffff;
+}
+#blog_box .blog_box_item .card-body{
+    padding-left: 20px;
+}
+#blog_box .blog_box_item .card-body h4{
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+#blog_box .blog_box_item .card-body h4 a{
+    color: #11161E;
+    transition: 0.3s;
+}
+#blog_box .blog_box_item .card-body h4 a:hover{
+    color: #FF6F61;
+}
+#blog_box .blog_box_item .card-body p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+#blog_box .blog_box_item .card-body .read_more{
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444444;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+#blog_box .blog_box_item .card-body .read_more:hover{
+    color: #FF6F61;
+}
+#blog_box .blog_box_item .card-body .read_more i{
+    margin-left: 5px;
+}
+#blog_box .blog_post_showing{
+    padding-bottom: 13px;
+    border-bottom: 2px solid black;
+    margin-top: 20px;
+}
+#blog_box .blog_post_btn{
+    margin-top: 20px;
+}
+#blog_box .blog_post_btn nav ul{
+    margin-left: 56px;
+}
+#blog_box .blog_post_btn nav ul li{
+    margin-right: 10px;
+}
+#blog_box .blog_post_btn nav ul li a{
+    color: #444444;
+}
+#blog_box .blog_post_btn nav ul li a:hover{
+    background: #11161E;
+    color: #ffffff;
+}
+#blog_box .blog_post_btn nav ul li.active_pn a{
+    color: #ffffff;
+    background: #11161E;
+}
+/* Blog Box section css end  */
+/* Blog page css end  */
