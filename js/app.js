@@ -31,7 +31,7 @@ $(function(){
       slidesToShow: 4
     });
     // Time Countdown activation
-    $('#counter_time').countdown('2023/01/30', function(event) {
+    $('#counter_time').countdown('2023/05/30', function(event) {
       var $this = $(this).html(event.strftime(''
         + '<div class="counter_time_item"><span>%d</span><span>Days</span></div>'
         + '<span class="clon">:</span>'
@@ -93,9 +93,6 @@ $(function(){
     centerMode: true,
     focusOnSelect: true
   });
-  // zoom pluging activation 
-  $(".xzoom").xzoom();
-
   // products details activation
   $('.product_details_slider_img').slick({
     slidesToShow: 1,
@@ -116,7 +113,7 @@ $(function(){
   });
 
   // filterizr activation
-  $('.product_customer_review_text').filterizr();
+  // $('.product_customer_review_text').filterizr();
 
   $('.product_customer_review_menu li').on('click', function(){
     $(this).addClass('active_menu');
@@ -132,6 +129,12 @@ $(function(){
   // checkbox jquary activation
   $('.checkbox_jq').on('click', function(){
     $('.checkbox_para').slideToggle();
+  });
+  //Blog Classic Img slider activation
+  $('.blog_classic_box_img_slider').slick({
+    arrows: false,
+    dots: false,
+    autoplay: true
   });
 })
 
